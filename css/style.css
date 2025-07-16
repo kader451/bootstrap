@@ -1,9 +1,7 @@
 /* Image de fond du header */
 .header-banner {
-    background-image: url("../Image/bamboo-7866718_640.jpg");
     background-size: cover;
     background-position: center;
-    height: 40vh;
     position: relative;
     color: white;
 }
@@ -19,17 +17,15 @@
     font-size: 1.8rem;
     cursor: pointer;
     color: white;
-    background: none;
     border: none;
 }
 
 .header-banner .overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
     padding: 1rem;
 }
 
+/* mettre sur bootstrap  */
 nav {
     color: aliceblue;
 }
@@ -38,60 +34,44 @@ nav {
 /* section 1 avec une image */
 .frog {
     overflow: hidden;
-    width: 80%;
-    height: 30vh;
+
 }
 
 /* section 2 avec 3 images */
 .jaguar {
     overflow: hidden;
-    width: 90%;
-    height: 15vh;
+
 }
 
 .parrot {
     overflow: hidden;
-    width: 90%;
-    height: 15vh;
+
 }
 
 .rainforest {
     overflow: hidden;
-    width: 90%;
-    height: 15vh;
 }
 
 .crocodile {
     overflow: hidden;
-    width: 90%;
-    height: 15vh;
 }
 
 .snake {
     overflow: hidden;
-    width: 90%;
-    height: 15vh;
 }
 
 .toucan {
     overflow: hidden;
-    width: 90%;
-    height: 15vh;
 }
 
 /* footer  */
 .footer-banner {
-    background-image: url("../Image/bamboo-7866718_640.jpg");
+    background-image: url("../Image/bamboo-7866718_640.jpg"); /* mettre sur bootstrap  */
     background-size: cover;
     background-position: center;
-    height: 20vh;
     position: relative;
 }
 
-.footer-banner .overlay {
-    width: 100%;
-    height: 100%;
-}
 
 form {
     padding: 14px;
@@ -102,7 +82,7 @@ form {
     height: 15vh;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
     .navbar-nav {
         display: none;
         flex-direction: column;
@@ -112,10 +92,10 @@ form {
         gap: 0.5rem;
     }
 
-    /* Affiche le menu si checkbox cochée */
+    /* Affiche le menu si checkbox cochée
     #menu-toggle:checked+.burger+.navbar-nav {
         display: flex;
-    }
+    } */
 
     .burger {
         display: block;
