@@ -1,61 +1,79 @@
 /* Image de fond du header */
 .header-banner {
-  background-image: url("bamboo-7866718_640.jpg"); /* Remplace par ton image */
-  background-size: cover;
-  background-position: center;
-  height: 30vh; 
-  position: relative;
-  color: white;
+    background-image: url("../Image/bamboo-7866718_640.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+    color: white;
+}
+
+/* Masquer la checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Style du burger */
+.burger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
 }
 
 .header-banner .overlay {
-  background-color: rgba(0, 0, 0, 0.5); 
-  height: 100%;
-  width: 100%;
-  padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
 }
 
-nav{
+nav {
     color: aliceblue;
 }
 
-.frog{
+
+/* section 1 avec une image */
+.frog {
     overflow: hidden;
     width: 80%;
     height: 30vh;
 }
 
-.jaguar{
-        overflow: hidden;
-    width: 90%;
-    height: 15vh;
-}
-
-.parrot{
+/* section 2 avec 3 images */
+.jaguar {
     overflow: hidden;
     width: 90%;
     height: 15vh;
 }
 
-.rainforest{
+.parrot {
     overflow: hidden;
     width: 90%;
     height: 15vh;
 }
 
-.crocodile{
+.rainforest {
     overflow: hidden;
     width: 90%;
     height: 15vh;
 }
 
-.snake{
+.crocodile {
     overflow: hidden;
     width: 90%;
     height: 15vh;
 }
 
-.toucan{
+.snake {
+    overflow: hidden;
+    width: 90%;
+    height: 15vh;
+}
+
+.toucan {
     overflow: hidden;
     width: 90%;
     height: 15vh;
@@ -63,22 +81,51 @@ nav{
 
 /* footer  */
 .footer-banner {
-  background-image: url("bamboo-7866718_640.jpg"); 
-  background-size: cover;
-  background-position: center;
-  height: 20vh; 
-  position: relative;
+    background-image: url("../Image/bamboo-7866718_640.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    position: relative;
 }
 
 .footer-banner .overlay {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-form{
-   padding: 14px;
-    border: solid 15px rgb(82, 99, 82);}
+form {
+    padding: 14px;
+    border: solid 15px rgb(82, 99, 82);
+}
 
-.cellule{
+.cellule {
     height: 15vh;
+}
+
+@media (max-width: 575.98px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    /* Affiche le menu si checkbox cochée */
+    #menu-toggle:checked+.burger+.navbar-nav {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-link {
+    color: white !important;
+}
+
+nav {
+    padding: 1rem;
 }
