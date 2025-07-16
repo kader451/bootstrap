@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ghost - Thoughts, stories and ideas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        
+        /* Masquer la checkbox */
+        #menu-toggle {
+            display: none;
+        }
+
+        /* Style du burger */
+        .burger {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: white;
+            background: none;
+            border: none;
+        }
+
+        /* Style du menu (mobile) */
+        @media (max-width: 575.98px) {
+            .navbar-nav {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                gap: 0.5rem;
+            }
+
+            /* Affiche le menu si checkbox cochée */
+            #menu-toggle:checked+.burger+.navbar-nav {
+                display: flex;
+            }
+
+            .burger {
+                display: block;
+            }
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body class="container-fluid h-100 bg-dark text-white">
+
+    <header class="header-banner container-fluid">
+        <div class="overlay">
+            <nav class="container d-flex align-items-center justify-content-between" aria-label="Main navigation">
+                <span class="navbar-brand text-white fs-4 fw-bold">Ghost</span>
+
+                <!-- Menu toggle -->
+                <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" />
+
+                <!-- Burger icon -->
+                <label for="menu-toggle" class="burger" aria-hidden="true">&#9776;</label>
+
+                <!-- Menu navigation -->
+                <ul class="navbar-nav flex-row gap-3 m-0 p-0 list-unstyled">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Author</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Subscribe</a></li>
+                </ul>
+            </nav>
+
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <h1>Ghost</h1>
+                    <p>Thoughts, stories and ideas</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid h-100 g-5">
+        <div class="row g-3 mt-2">
+            <div class="col-12 col-md-7 d-flex justify-content-center">
+                <img src="frog-9335937_640.jpg" class="img-fluid frog" alt="Frog" />
+            </div>
+            <div class="col-12 col-md-5">
+                <strong>Start here for a quick overview of everything you need to know</strong><br />
+                We’ve curated the most important information to help you get started with Ghost into this one post.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci alias minus recusandae libero itaque
+                illum odio totam, fugit expedita nisi natus aliquam. Necessitatibus aut pariatur obcaecati velit
+                nostrum,
+                enim unde.
+            </div>
+        </div>
+<!-- section 1 avec image Jaguar -->
+        <div class="container mt-5">
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+                    <img src="jaguar-3370498_640.jpg" class="img-fluid jaguar" alt="Jaguar"/>
+                    <strong>Customizing Your brand and design settings</strong><br/>
+                    How to tweak a few settings...
+                </div>
+
+<!-- section 2 avec 3 image -->
+                <div class="col-12 col-md-4">
+                    <img src="parrot-4132823_640.jpg" class="img-fluid parrot" alt="Parrot" />
+                    <strong>Writing and managing content...</strong><br />
+                    A full overview...
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="rainforest-3119822_640 (1).jpg" class="img-fluid rainforest" alt="Rainforest" />
+                    <strong>Building your audience...</strong><br />
+                    How Ghost allows...
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="siamese-crocodile-8509003_640.jpg" class="img-fluid crocodile" alt="Crocodile" />
+                    <strong>Selling premium memberships...</strong><br />
+                    For creators and entrepreneurs...
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="snake-7386684_640.jpg" class="img-fluid snake" alt="Snake"/>
+                    <strong><br>How to grow your business...</strong><br/>
+                    A guide to collaborating...
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="toucan-9504656_640.webp" class="img-fluid toucan" alt="Toucan" />
+                    <strong>Setting up apps...</strong><br />
+                    Work with your favorite apps...
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-banner text-white py-4 bg-dark">
+        <div class="overlay container d-flex flex-column justify-content-center align-items-center text-center">
+            <h5 class="mb-2">Ghost © 2021</h5>
+            <p class="mb-2">
+                Data & Privacy – Contact –
+                <a href="#" class="text-white text-decoration-underline">Contact us →</a>
+            </p>
+            <small>Powered by Ghost</small>
+        </div>
+    </footer>
+</body>
+
+</html>
